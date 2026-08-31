@@ -24,7 +24,7 @@ Request, EWS Document, Source Sequence, Row Sequence, Resource Role, Rate, High 
 Request, Field Key, Severity, Reason Code, Message, Blocking, Status, Resolution Note.
 
 ### Name Alias
-Canonical Name, Alias, Active. Initialize the dataverse table using Nicknames_Reference.csv
+Canonical Name, Alias, Active. Initialize the Dataverse table using `shared/Nicknames_Reference.csv` (manual CSV import via the maker portal — document as a deployment step).
 
 ## Externally Maintained Reference Lookups
 ### SalesRouting  

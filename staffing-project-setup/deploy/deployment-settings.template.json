@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/PowerAppsDeploymentSettingsSchema",
+  "_comment": "Deployment settings template for Staffing Project Setup solution. Copy this file per target environment and populate values. Never commit secret values.",
+  "EnvironmentVariables": [
+    { "SchemaName": "prefix_SalesRoutingURL",         "Value": "" },
+    { "SchemaName": "prefix_AccountSummaryFileURL",    "Value": "" },
+    { "SchemaName": "prefix_TemplateFileURL",          "Value": "" },
+    { "SchemaName": "prefix_RequestLibrarySiteURL",    "Value": "" },
+    { "SchemaName": "prefix_RequestLibraryName",       "Value": "" },
+    { "SchemaName": "prefix_MailboxMode",              "Value": "" },
+    { "SchemaName": "prefix_SubjectPattern",           "Value": "Staffing and Project Setup | {CLIENT_NAME} | {PROJECT_NAME}" },
+    { "SchemaName": "prefix_WeeksPerMonth",            "Value": "4.33" },
+    { "SchemaName": "prefix_DefaultStartOffsetDays",   "Value": "14" },
+    { "SchemaName": "prefix_DurationInclusivity",      "Value": "inclusive" },
+    { "SchemaName": "prefix_FuzzyThreshold",           "Value": "0.85" },
+    { "SchemaName": "prefix_MaxFileSizeBytes",         "Value": "52428800" },
+    { "SchemaName": "prefix_AllowedExtensions",        "Value": "pdf,xlsx" },
+    { "SchemaName": "prefix_LockTimeoutSeconds",       "Value": "60" },
+    { "SchemaName": "prefix_NewProjectSetupURL",       "Value": "" },
+    { "SchemaName": "prefix_PeakURL",                  "Value": "" },
+    { "SchemaName": "prefix_FrameworkDocURL",          "Value": "" },
+    { "SchemaName": "prefix_SalesRoutingMatrixURL",    "Value": "" },
+    { "SchemaName": "prefix_ExtractionServiceEndpoint","Value": "" },
+    { "SchemaName": "prefix_ExtractionModelIdentifier","Value": "" }
+  ],
+  "ConnectionReferences": [
+    { "LogicalName": "prefix_SharedDataverse",              "ConnectionId": "" },
+    { "LogicalName": "prefix_SharedSharepoint",             "ConnectionId": "" },
+    { "LogicalName": "prefix_SharedOffice365Outlook",       "ConnectionId": "" }
+  ]
+}
