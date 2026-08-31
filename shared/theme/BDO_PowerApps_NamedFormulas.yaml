@@ -1,0 +1,65 @@
+# BDO Power Apps — Named Formulas Snippet
+# ─────────────────────────────────────────────────────────────────────────────
+# HOW TO USE
+#   1. Open your canvas app in Power Apps Studio.
+#   2. Select App in the tree view → open the "Formulas" property (App.Formulas).
+#   3. Paste the entire content of the "formulas:" block below (without the YAML
+#      key itself) into the formula bar.
+#   4. Every screen and control can then reference BDOTheme.<token> directly,
+#      e.g.  Fill = BDOTheme.ButtonFill
+#
+# The BDOTheme record is a named formula — it is evaluated once and cached,
+# so there is no runtime overhead versus hard-coded color literals.
+# ─────────────────────────────────────────────────────────────────────────────
+
+formulas: |
+
+  BDOTheme = {
+
+    // ── Brand / Primary ────────────────────────────────────────────────────
+    Primary:            ColorValue("#CC0000"),   // BDO Red
+    PrimaryDark:        ColorValue("#A30000"),   // Hover / pressed
+    PrimaryLight:       ColorValue("#FF4040"),   // Focus ring
+
+    // ── Header / Navigation ────────────────────────────────────────────────
+    HeaderBackground:   ColorValue("#2B2B2B"),   // Dark charcoal bar
+    HeaderText:         ColorValue("#FFFFFF"),
+
+    // ── Page & Surface ─────────────────────────────────────────────────────
+    PageBackground:     ColorValue("#FFFFFF"),
+    Surface:            ColorValue("#FFFFFF"),
+
+    // ── Typography ─────────────────────────────────────────────────────────
+    TextPrimary:        ColorValue("#1A1A1A"),
+    TextSecondary:      ColorValue("#555555"),
+    TextPlaceholder:    ColorValue("#999999"),
+    TextLink:           ColorValue("#0563C1"),
+    TextError:          ColorValue("#CC0000"),
+    TextOnPrimary:      ColorValue("#FFFFFF"),   // Text on red background
+
+    // ── Form Inputs ────────────────────────────────────────────────────────
+    InputBackground:    ColorValue("#FFFFFF"),
+    InputBorder:        ColorValue("#CCCCCC"),
+    InputBorderFocus:   ColorValue("#CC0000"),
+    InputBorderError:   ColorValue("#CC0000"),
+
+    // ── Buttons ────────────────────────────────────────────────────────────
+    ButtonFill:         ColorValue("#CC0000"),
+    ButtonFillHover:    ColorValue("#A30000"),
+    ButtonText:         ColorValue("#FFFFFF"),
+
+    // ── Status & Semantic ──────────────────────────────────────────────────
+    RequiredIndicator:  ColorValue("#CC0000"),
+    InfoIcon:           ColorValue("#00B4D8"),   // Teal info / radio icons
+    Success:            ColorValue("#107C10"),
+    Warning:            ColorValue("#F7C948"),
+    Error:              ColorValue("#CC0000"),
+
+    // ── Dividers & Borders ─────────────────────────────────────────────────
+    Divider:            ColorValue("#E0E0E0"),
+    BorderSubtle:       ColorValue("#F0F0F0"),
+
+    // ── Scrollbar ──────────────────────────────────────────────────────────
+    ScrollbarFill:      ColorValue("#CCCCCC")
+
+  };

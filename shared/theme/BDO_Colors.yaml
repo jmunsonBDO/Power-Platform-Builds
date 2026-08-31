@@ -1,0 +1,56 @@
+# BDO Power Apps — Canonical Color Palette
+# Source: BDO_Power_Apps_Color_Scheme_Example.png
+# Usage: Reference these hex values when authoring any BDO canvas app.
+#        For Power Apps, import BDO_PowerApps_NamedFormulas.yaml into App.Formulas.
+#        For component libraries, use BDO_ComponentLibrary_Theme.pa.yaml.
+
+palette:
+
+  # ── Brand / Primary ─────────────────────────────────────────────────────────
+  primary:           "#CC0000"   # BDO Red — buttons, dropdowns, accents
+  primary_dark:      "#A30000"   # Hover / pressed state for red elements
+  primary_light:     "#FF4040"   # Highlight / focus ring on red elements
+
+  # ── Header / Navigation ─────────────────────────────────────────────────────
+  header_background: "#2B2B2B"   # Dark charcoal header bar
+  header_text:       "#FFFFFF"   # White text on header
+
+  # ── Page & Surface ──────────────────────────────────────────────────────────
+  page_background:   "#FFFFFF"   # Main canvas background
+  surface:           "#FFFFFF"   # Cards, panels, form sections
+
+  # ── Typography ──────────────────────────────────────────────────────────────
+  text_primary:      "#1A1A1A"   # Body copy (near-black)
+  text_secondary:    "#555555"   # Subdued / helper text
+  text_placeholder:  "#999999"   # Input placeholder text
+  text_link:         "#0563C1"   # Hyperlinks (blue)
+  text_error:        "#CC0000"   # Validation errors, disclaimers (reuses BDO Red)
+  text_on_primary:   "#FFFFFF"   # Text placed on a red (#CC0000) background
+
+  # ── Form Inputs ─────────────────────────────────────────────────────────────
+  input_background:  "#FFFFFF"   # Text input / combobox fill
+  input_border:      "#CCCCCC"   # Default border
+  input_border_focus:"#CC0000"   # Focused border (BDO Red)
+  input_border_error:"#CC0000"   # Error-state border
+
+  # ── Buttons ─────────────────────────────────────────────────────────────────
+  button_fill:       "#CC0000"   # Primary button background
+  button_fill_hover: "#A30000"   # Primary button hover
+  button_text:       "#FFFFFF"   # Primary button label
+  button_fill_ghost: "transparent"  # Ghost / outline button
+  button_border_ghost:"#CC0000"  # Ghost button border
+  button_text_ghost: "#CC0000"   # Ghost button label
+
+  # ── Status & Semantic ────────────────────────────────────────────────────────
+  required_indicator:"#CC0000"   # Asterisk on required fields
+  info_icon:         "#00B4D8"   # Circular info / radio icons (teal)
+  success:           "#107C10"   # Success states
+  warning:           "#F7C948"   # Warning states
+  error:             "#CC0000"   # Error states (reuses BDO Red)
+
+  # ── Dividers & Borders ──────────────────────────────────────────────────────
+  divider:           "#E0E0E0"   # Horizontal rules, section separators
+  border_subtle:     "#F0F0F0"   # Very light outline borders
+
+  # ── Scrollbar ───────────────────────────────────────────────────────────────
+  scrollbar_fill:    "#CCCCCC"   # Scroll track fill

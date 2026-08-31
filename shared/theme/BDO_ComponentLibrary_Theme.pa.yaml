@@ -1,0 +1,205 @@
+ComponentDefinitions:
+  BDOColorTheme:
+    DefinitionType: CanvasComponent
+    CustomProperties:
+      # ── Read-only color outputs ──────────────────────────────────────────
+      Primary:
+        PropertyKind: Output
+        DisplayName: Primary
+        Description: BDO Red — buttons, dropdowns, chevrons (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      PrimaryDark:
+        PropertyKind: Output
+        DisplayName: PrimaryDark
+        Description: Hover / pressed state for red elements (#A30000)
+        DataType: Color
+        Default: =ColorValue("#A30000")
+
+      PrimaryLight:
+        PropertyKind: Output
+        DisplayName: PrimaryLight
+        Description: Focus ring / highlight on red elements (#FF4040)
+        DataType: Color
+        Default: =ColorValue("#FF4040")
+
+      HeaderBackground:
+        PropertyKind: Output
+        DisplayName: HeaderBackground
+        Description: Dark charcoal app header bar (#2B2B2B)
+        DataType: Color
+        Default: =ColorValue("#2B2B2B")
+
+      HeaderText:
+        PropertyKind: Output
+        DisplayName: HeaderText
+        Description: White text on header (#FFFFFF)
+        DataType: Color
+        Default: =ColorValue("#FFFFFF")
+
+      PageBackground:
+        PropertyKind: Output
+        DisplayName: PageBackground
+        Description: Main canvas background (#FFFFFF)
+        DataType: Color
+        Default: =ColorValue("#FFFFFF")
+
+      Surface:
+        PropertyKind: Output
+        DisplayName: Surface
+        Description: Cards, panels, form section fill (#FFFFFF)
+        DataType: Color
+        Default: =ColorValue("#FFFFFF")
+
+      TextPrimary:
+        PropertyKind: Output
+        DisplayName: TextPrimary
+        Description: Body copy — near-black (#1A1A1A)
+        DataType: Color
+        Default: =ColorValue("#1A1A1A")
+
+      TextSecondary:
+        PropertyKind: Output
+        DisplayName: TextSecondary
+        Description: Subdued / helper text (#555555)
+        DataType: Color
+        Default: =ColorValue("#555555")
+
+      TextPlaceholder:
+        PropertyKind: Output
+        DisplayName: TextPlaceholder
+        Description: Input placeholder text (#999999)
+        DataType: Color
+        Default: =ColorValue("#999999")
+
+      TextLink:
+        PropertyKind: Output
+        DisplayName: TextLink
+        Description: Hyperlinks (#0563C1)
+        DataType: Color
+        Default: =ColorValue("#0563C1")
+
+      TextError:
+        PropertyKind: Output
+        DisplayName: TextError
+        Description: Validation errors and disclaimers (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      TextOnPrimary:
+        PropertyKind: Output
+        DisplayName: TextOnPrimary
+        Description: Text placed on a red background (#FFFFFF)
+        DataType: Color
+        Default: =ColorValue("#FFFFFF")
+
+      InputBackground:
+        PropertyKind: Output
+        DisplayName: InputBackground
+        Description: Text input and combobox fill (#FFFFFF)
+        DataType: Color
+        Default: =ColorValue("#FFFFFF")
+
+      InputBorder:
+        PropertyKind: Output
+        DisplayName: InputBorder
+        Description: Default input border (#CCCCCC)
+        DataType: Color
+        Default: =ColorValue("#CCCCCC")
+
+      InputBorderFocus:
+        PropertyKind: Output
+        DisplayName: InputBorderFocus
+        Description: Focused input border (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      InputBorderError:
+        PropertyKind: Output
+        DisplayName: InputBorderError
+        Description: Error-state input border (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      ButtonFill:
+        PropertyKind: Output
+        DisplayName: ButtonFill
+        Description: Primary button background (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      ButtonFillHover:
+        PropertyKind: Output
+        DisplayName: ButtonFillHover
+        Description: Primary button hover (#A30000)
+        DataType: Color
+        Default: =ColorValue("#A30000")
+
+      ButtonText:
+        PropertyKind: Output
+        DisplayName: ButtonText
+        Description: Primary button label (#FFFFFF)
+        DataType: Color
+        Default: =ColorValue("#FFFFFF")
+
+      RequiredIndicator:
+        PropertyKind: Output
+        DisplayName: RequiredIndicator
+        Description: Asterisk on required fields (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      InfoIcon:
+        PropertyKind: Output
+        DisplayName: InfoIcon
+        Description: Circular info / radio icons — teal (#00B4D8)
+        DataType: Color
+        Default: =ColorValue("#00B4D8")
+
+      Success:
+        PropertyKind: Output
+        DisplayName: Success
+        Description: Success states (#107C10)
+        DataType: Color
+        Default: =ColorValue("#107C10")
+
+      Warning:
+        PropertyKind: Output
+        DisplayName: Warning
+        Description: Warning states (#F7C948)
+        DataType: Color
+        Default: =ColorValue("#F7C948")
+
+      Error:
+        PropertyKind: Output
+        DisplayName: Error
+        Description: Error states (#CC0000)
+        DataType: Color
+        Default: =ColorValue("#CC0000")
+
+      Divider:
+        PropertyKind: Output
+        DisplayName: Divider
+        Description: Horizontal rules and section separators (#E0E0E0)
+        DataType: Color
+        Default: =ColorValue("#E0E0E0")
+
+      BorderSubtle:
+        PropertyKind: Output
+        DisplayName: BorderSubtle
+        Description: Very light outline borders (#F0F0F0)
+        DataType: Color
+        Default: =ColorValue("#F0F0F0")
+
+      ScrollbarFill:
+        PropertyKind: Output
+        DisplayName: ScrollbarFill
+        Description: Scroll track fill (#CCCCCC)
+        DataType: Color
+        Default: =ColorValue("#CCCCCC")
+
+    Properties:
+      Height: =0
+      Width: =0
+      Visible: =false
