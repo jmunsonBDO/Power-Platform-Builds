@@ -24,6 +24,11 @@
 21. Unauthorized users cannot access request records or documents.
 22. Flow checker has no errors and accepted warnings are documented.
 23. Canvas YAML validates through Canvas Authoring MCP and syncs to Power Apps Studio.
+24. Staffing coordinator controls final To recipients on the Outlook draft; the solution does not pre-populate or lock the To field.
+25. When FUNDING_DETAILS is absent, `{{FUNDING_DETAILS}}` is replaced with an empty string and no `[NEEDS INPUT]` marker appears; the surrounding `<br>` tag remains but no funding content is visible.
+26. When M365 attribution is absent, `{{M365_ATTRIBUTION}}` is replaced with an empty string; when Azure attribution is absent, `{{AZURE_ATTRIBUTION}}` is replaced with an empty string; when neither is present, `{{STRATEGIC_PARTNER}}` is replaced with an empty string.
+27. When multiple EWS files are uploaded, `{{EWS_LINK}}` renders a `<ul>` of safe HTTPS anchors, one per file, preserving upload sequence order.
+28. STRATEGIC_PARTNER resolves to `Microsoft` when either M365 or Azure attribution is present; resolves to empty string when neither is present.
 
 ## Definition of done
 - The solution imports into a clean test environment using deployment settings.

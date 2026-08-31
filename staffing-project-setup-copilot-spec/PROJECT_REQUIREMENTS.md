@@ -39,8 +39,8 @@ Create a human-in-the-loop solution that drafts a Staffing and Project Setup mes
 - Provide Open Draft, Regenerate Draft, and Return to Review actions.
 
 ## 7. Extraction and transformation rules
-- Client and project: locate the project title after `STATEMENT OF WORK ("SOW")` or typographic equivalent and split the approved title format. If unreliable, flag both fields.
-- Scope leader: search the first SOW page near `BDO Digital, LLC` and match against SalesRouting Scope Leader Queue Owner. Reference the Name Alias table to determine if a matching Full Name exists and use that name for the Scope Leader lookup when necessary. 
+- Client and project: locate the project title after `STATEMENT OF WORK ("SOW")` or typographic equivalent and split the approved title format. The separator may be an en-dash (–, U+2013), em-dash (—, U+2014), or regular hyphen (-). If no separator is present, flag both fields as uncertain for coordinator resolution.
+- Scope leader: search the first SOW page near `BDO Digital, LLC` and match each comma-separated name against SalesRouting Scope Leader Queue Owner. Reference the Name Alias table to determine if a matching Full Name exists and use that name for the Scope Leader lookup when necessary. The first confirmed SalesRouting match becomes the Scope Leader; all remaining non-matching names become Account Owner candidates.
 - Timeline: preserve minimum and maximum weeks. Convert months with the configured `WeeksPerMonth` value.
 - Dates: if no explicit start exists, use the processing local business date plus 14 calendar days. End date uses the maximum duration.
 - Money: use two decimals and thousands separators.

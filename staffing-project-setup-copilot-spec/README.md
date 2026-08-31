@@ -4,7 +4,7 @@ This repository is the build contract for GitHub Copilot CLI. It defines a Power
 
 ## Build order
 1. Read `.github/copilot-instructions.md`.
-2. Read all files under `docs/`.
+2. Read all files under `staffing-project-setup-copilot-spec/`.
 3. Install and use the Canvas Apps plugin with the Canvas Authoring MCP server.
 4. Build, validate, and sync every `.pa.yaml` file through an active Power Apps Studio coauthoring session.
 5. Install and use the Power Automate plugin with its available flow-authoring MCP server.
