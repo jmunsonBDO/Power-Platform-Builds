@@ -16,6 +16,12 @@ shared/                   ← cross-project reference data (e.g., Nicknames_Refe
 
 When working on a specific project, read its `BUILD_PROMPT.md` first. It will identify which spec files are normative and supply any project-specific rules that extend those below.
 
+## Querying Microsoft Documentation
+
+You have access to MCP tools called `microsoft_docs_search`, `microsoft_docs_fetch`, and `microsoft_code_sample_search` - these tools allow you to search through and fetch Microsoft's latest official documentation and code samples, and that information might be more detailed or newer than what's in your training data set.
+
+When handling questions around how to work with Power Apps contrls, screens, labels, buttons, tables, connectors, etc - please use these tools for research purposes when dealing with specific / narrowly defined questions that may occur.
+
 ## Mandatory authoring tools (all projects)
 - Use the Microsoft Power Platform Skills marketplace.
 - Use the Canvas Apps plugin and Canvas Authoring MCP server for canvas apps. Generate `.pa.yaml`, validate it, correct all errors, and sync it with an active Power Apps Studio coauthoring session.
